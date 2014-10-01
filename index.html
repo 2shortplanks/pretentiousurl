@@ -1,0 +1,50 @@
+<html>
+<head>
+   <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+   <script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+   <style>
+     body { background: #000a00; color: #dddddd;}
+	 #text {
+	 	padding: 20px;
+	 	font-family: 'Bevan', cursive;
+	 	font-size: 64pt;
+	 	margin-top: 100px;
+	 	text-align: center;
+	 }
+	 .textshadow #text {
+	    color: transparent;
+ 	    text-shadow: 0 0 5px rgba(255,255,255,1);
+	    -webkit-animation: myfirst 15s; /* Chrome, Safari, Opera */
+	    animation: myfirst 5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+	 }
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes myfirst {
+	    0%  {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	    30% {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	    35% {text-shadow: 0 0 28px rgba(255,255,255,1);}
+	    45% {text-shadow: 0 0 0px rgba(255,255,255,1);}
+	    60% {text-shadow: 0 0 0px rgba(255,255,255,1);}
+	    65% {text-shadow: 0 0 28px rgba(255,255,255,1);}
+	    70% {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	    100% {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	}
+
+	/* Standard syntax */
+	@keyframes myfirst {
+	    0%  {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	    30% {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	    35% {text-shadow: 0 0 28px rgba(255,255,255,1);}
+	    45% {text-shadow: 0 0 0px rgba(255,255,255,1);}
+	    60% {text-shadow: 0 0 0px rgba(255,255,255,1);}
+	    65% {text-shadow: 0 0 28px rgba(255,255,255,1);}
+	    70% {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	    100% {text-shadow: 0 0 5px rgba(255,255,255,1);}
+	}
+   </style>
+</head>
+<body>
+	<div id="text">pretentious url</div>
+</body>
+</html>
